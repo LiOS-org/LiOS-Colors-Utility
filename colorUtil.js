@@ -67,7 +67,7 @@ colorUtil.CSSRegister = (CSSObject) => {
     const root = document.querySelector(":root");
     
     for (const [key, value] of Object.entries(CSSObject)) {
-        root.style.setProperty(key, value)
+        root.style.setProperty(key, value);
     };
 };
 const a = colorUtil.CSS("#c92351");
