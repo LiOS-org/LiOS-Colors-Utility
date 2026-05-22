@@ -70,8 +70,6 @@ colorUtil.CSSRegister = (CSSObject) => {
         root.style.setProperty(key, value);
     };
 };
-const a = colorUtil.CSS("#c92351");
-const b = colorUtil.CSSRegister(a);
 
 export {colorUtil};
 
