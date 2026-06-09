@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.liosorg.com/metadata/v1/schema.json",
+    "$schema": "https://schema.liosorg.com/metadata/v2/schema.json",
     "name": "LiOS-Colors-Utility",
     "description": "A deterministic, client-side utility that generates a complete color palette from a single base color — no database, no API, just maths.",
     "favicon": {
@@ -10,11 +10,15 @@
     "github": "https://github.com/LiOS-Org/LiOS-Colors-Utility",
     "url": "https://github.com/LiOS-Org/LiOS-Colors-Utility",
     "version": {
-        "number": "1.0.0",
-        "code": 1
+        "number": "1.1.0",
+        "code": 2
     },
     "license": {
         "name": "Apache 2.0",
         "copy": "https://raw.githubusercontent.com/LiOS-org/LiOS-Colors-Utility/refs/heads/main/LICENSE"
-    }
+    },
+    "channel": "stable",
+    "OSS": true,
+    "tags": ["utility"],
+    "LiOS-Project-Id": "ddf56630-3573-422d-b2fd-d012875e84eb"
 }

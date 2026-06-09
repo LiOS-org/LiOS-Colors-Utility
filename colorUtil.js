@@ -48,8 +48,8 @@ colorUtil.frostify = (paletteArray) => {
     });
     return newPalette;
 }
-colorUtil.CSS = (baseColor) => {
-    const normal = colorUtil.newPalette(baseColor);
+colorUtil.CSS = (baseColor,steps = 7) => {
+    const normal = colorUtil.newPalette(baseColor, { steps: steps });
     const frosted = colorUtil.frostify(normal);
     const normalLength = normal.length;
     const frostedLength = frosted.length;

@@ -40,6 +40,13 @@ const baseColor = "#3498db"; // Base color in hex format
 const palette = colorUtil.newPalette(baseColor);
 console.log(palette); // Output: An array of color in hex format (String) with various shades and tints based on the base color
 ```
+> Optionally `steps` can be provided to get custom numbers of palettes, default value is 7
+
+```JS
+const newPalette = colorUtil.newPalette(baseColor,12);
+console.log(newPalette); //Will output an array  of 12 colors in hex format (String).
+```
+
 
 ### This utility can also generate `translucent` color palette, which is a palette with the same colors but with varying levels of transparency. Useful for frosted glass design.
 
@@ -56,6 +63,13 @@ console.log(translucentPalette); // Output: An array of color in rgba format (St
 const CSS = colorUtil.CSS(baseColor);
 console.log(CSS); // Output: A Object containing CSS variables for the generated color palette,
 ```
+> Optionally `steps` can be provided to get custom numbers of palettes, default value is 7
+
+```JS
+const newCSS = colorUtil.newCSS(baseColor,12);
+console.log(newCSS); // Output: A Object containing 12 CSS variables for the generated color palette,
+```
+
 > You will need to pass an actual color in hex format to the `CSS` function, not the palette, this is because the CSS variables are generated based on the base color and not the palette.
 
 > This function generates both normal and translucent CSS variables, the normal variables are in the format `--color-{index}` and the translucent variables are in the format `--frosted-color-{index}`, where `{index}` is the index of the color in the palette.
